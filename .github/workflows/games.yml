@@ -36,8 +36,8 @@ jobs:
       - uses: docker/build-push-action@v4
         with:
           context: ./games/${{ matrix.game }}
-          file: ./games/${{ matrix.game }}/Dockerfile
+          file: ./games/altv/Dockerfile
           platforms: linux/amd64
           push: true
           tags: |
-            ghcr.io/oratorian/games:${{ matrix.game }}
+            ghcr.io/Oratorian/games:${{ matrix.game }}

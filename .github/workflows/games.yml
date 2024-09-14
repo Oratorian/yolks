@@ -19,7 +19,6 @@ jobs:
       matrix:
         game:
           - altv
-          - fivem
 
     steps:
       - uses: actions/checkout@v4
